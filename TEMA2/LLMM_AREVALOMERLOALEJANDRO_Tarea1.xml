@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Alejandro Arévalo Merlo | Curso: Lenguajes de Marcas y sistemas de gestion de informacion 2025 -->
+
+<Ciudad nombre="Madrid">
+    
+    <InformacionGeneral>
+        <Pais>España</Pais>
+        <Poblacion>3200000</Poblacion>
+        <Extension unidad="km2">604.3</Extension>
+    </InformacionGeneral>
+
+    <LugaresImportantes>
+        <Lugar tipo="monumento">
+            <Nombre>Puerta del Sol</Nombre>
+            <Descripcion>Plaza central de España</Descripcion>
+        </Lugar>
+        <Lugar tipo="museo">
+            <Nombre>Museo del Prado</Nombre>
+            <Descripcion>Museo con cuadros y obras famosas</Descripcion>
+        </Lugar>
+        <Lugar tipo="parque">
+            <Nombre>Parque del Retiro</Nombre>
+            <Descripcion>Parque central muy grande con un lago en el centro</Descripcion>
+        </Lugar>
+    </LugaresImportantes>
+
+    <TransportePublico>
+        <Metro lineas="12">Muy usado y necesario pero muy poco intuitivo</Metro>
+        <Autobuses cantidad="200">Conecta zonas urbanas y suburbanas.</Autobuses>
+        <Tren cercanias="sí">Une la ciudad con pueblos cercanos</Tren>
+    </TransportePublico>
+
+</Ciudad>
