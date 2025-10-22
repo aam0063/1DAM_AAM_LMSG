@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tablas con colspan y rowspan</title>
+    <style>
+        table, th, td
+        {
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="4">Precio de las naranjas</th>
+        </tr>
+        <tr>
+            <th rowspan="4">Datos analizados</th>
+            <th>Provincia</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Malaga</td>
+            <td>0,54€</td>
+        </tr>
+        <tr>
+            <td>Granada</td>
+            <td>0,45€</td>
+        </tr>
+        <tr>
+            <th>Promedio</th>
+            <th>0,50€</th>
+        </tr>
+    </table>
+    <form action="proceso.php" method="post">
+        Nombre: <input type="text" name="nombre">
+        <p>
+            <input type = "radio" name="sexo" value="h">Hombre
+            <input type="radio" name="sexo" value="m">Mujer
+        </p>
+        <input> type="submit" value="Enviar">
+        <input> type="reset" value="Borrar">
+        <input> type="button" value="Hola Mundo"
+                onclick="alert('Hola Mundo!')">
+    </form>
+</body>
+</html>
