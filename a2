@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo completo de CSS</title>
+    <style>
+        /* Fondo del body */
+        body {
+            background-image: url("https://via.placeholder.com/400");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 400px 400px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilos generales */
+        * { color: blue; } /* Selector universal */
+        p { text-align: center; border: solid 2px blue; padding: 10px; width: 200px; max-width: 200px; }
+        .subapartado { font-style: italic; }
+        .miclase { border: solid 1px red; }
+        #miidentificador { background-color: cyan; }
+
+        /* Selectores de listas */
+        ul {
+            list-style-type: none;
+            background-color: #00FF00;
+            padding: 10px;
+            width: 300px;
+        }
+
+        li {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 2px;
+            border: 1px solid #999;
+        }
+
+        ul li:first-child { color: red; font-weight: bold; }
+        ul li:last-child { color: green; font-style: italic; }
+        ul li:nth-child(3) { color: blue; text-decoration: underline; }
+        ul li:nth-child(odd) { background-color: #f0f0f0; }
+        ul li:nth-child(even) { background-color: #d0d0d0; }
+        li a { color: black; text-decoration: none; }
+        li a:hover { background-color: purple; }
+        a:link { color: green; }
+        a:visited { color: red; }
+
+        /* Tablas */
+        table {
+            caption-side: bottom;
+            border-spacing: 15px;
+            width: 100%;
+            border: solid 3px blue;
+        }
+
+        th, td {
+            border: solid 1px black;
+            height: 40px;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        th { background-color: cyan; }
+
+        /* Divs y unidades */
+        div {
+            font-size: 12px;
+            border: solid 2px red;
+            width: 400px;
+            height: 250px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        #p1 { font-size: 1.5em; }
+        #p2 { font-size: 2rem; }
+        #p3 { font-size: 175%; }
+
+        /* Selectores de atributo */
+        p[lang="es"] { background-color: red; }
+        p[lang="en"] { background-color: orange; }
+
+        /* Encabezados */
+        h1, h2 { border: solid 3px green; padding: 5px; }
+
+        /* Pseudo-elementos */
+        p::after { content: " - texto agregado automáticamente"; }
+        li::first-letter { text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <h1>Ejemplo completo de CSS</h1>
+
+    <!-- Lista de navegación -->
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#acerca">Acerca</a></li>
+    </ul>
+
+    <!-- Párrafos con ID y class -->
+    <div>
+        <p id="p1">Párrafo 1</p>
+        <p id="p2">Párrafo 2</p>
+        <p id="p3">Párrafo 3</p>
+        <p class="subapartado">Subapartado de ejemplo</p>
+    </div>
+
+    <!-- Tabla -->
+    <table>
+        <caption>Precios de frutas</caption>
+        <thead>
+            <tr>
+                <th>Fruta</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Manzana</td>
+                <td>1,20€</td>
+            </tr>
+            <tr>
+                <td>Naranja</td>
+                <td>0,54€</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Promedio</td>
+                <th>0,87€</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Lista de ejemplo con nth-child -->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ul>
+
+    <!-- Párrafos de prueba de idioma -->
+    <p lang="es">Este párrafo está en español</p>
+    <p lang="en">This paragraph is in English</p>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de selectores CSS</title>
+    <style>
+        /* Primer hijo */
+        ul li:first-child {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Último hijo */
+        ul li:last-child {
+            color: green;
+            font-style: italic;
+        }
+
+        /* Tercer hijo */
+        ul li:nth-child(3) {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /* Hijos impares */
+        ul li:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+
+        /* Hijos pares */
+        ul li:nth-child(even) {
+            background-color: #d0d0d0;
+        }
+
+        /* Estilo general de la lista */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            width: 300px;
+        }
+
+        li {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #999;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de selectores CSS</h1>
+    <ul>
+        <li>Elemento 1 (primer hijo, rojo y negrita, impar)</li>
+        <li>Elemento 2 (segundo hijo, par)</li>
+        <li>Elemento 3 (tercer hijo, azul y subrayado, impar)</li>
+        <li>Elemento 4 (cuarto hijo, par)</li>
+        <li>Elemento 5 (quinto hijo, último, verde e italica, impar)</li>
+    </ul>
+</body>
+</html>
