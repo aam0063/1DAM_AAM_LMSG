@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="componentes.css"?>
+
+<!DOCTYPE listacomponentes [
+  <!-- Aquí podrías definir entidades o reglas si quisieras -->
+]> 
+
+<listacomponentes>
+  <!-- Componente 1 -->
+  <componente id="CPU01" tipo="hardware">
+    <fabricante>
+      <cif>A12345678</cif>
+      <nombre>Intel</nombre>
+      <pais>USA</pais>
+      <ciudad>Santa Clara</ciudad>
+    </fabricante>
+    <tienda>
+      <nombre>PCComponentes</nombre>
+      <direccion>Calle Mayor 12</direccion>
+      <telefono>912345678</telefono>
+      <email>ventas@pccomponentes.com</email>
+    </tienda>
+    <contenido>
+      <descripcion>Procesador Intel i7</descripcion>
+      <consumo>125W</consumo>
+      <garantia>3 años</garantia>
+      <precio_sin_iva>300</precio_sin_iva>
+    </contenido>
+  </componente>
+
+  <!-- Componente 2, tipo por defecto hardware -->
+  <componente id="RAM16GB">
+    <fabricante>
+      <cif>B87654321</cif>
+      <nombre>Corsair</nombre>
+      <pais>USA</pais>
+    </fabricante>
+    <tienda>
+      <nombre>Amazon</nombre>
+      <direccion>Online</direccion>
+      <telefono>900123456</telefono>
+    </tienda>
+    <contenido>
+      <descripcion>Memoria RAM 16GB DDR4</descripcion>
+      <consumo>10W</consumo>
+      <precio_con_iva>85</precio_con_iva>
+    </contenido>
+  </componente>
+
+  <!-- Componente 3, periférico -->
+  <componente id="RATON01" tipo="periferico">
+    <fabricante>
+      <cif>C11223344</cif>
+      <nombre>Logitech</nombre>
+      <pais>Suiza</pais>
+      <ciudad>Lausana</ciudad>
+    </fabricante>
+    <tienda>
+      <nombre>MediaMarkt</nombre>
+      <direccion>Avenida Central 5</direccion>
+      <telefono>911223344</telefono>
+      <email>contacto@mediamarkt.es</email>
+    </tienda>
+    <contenido>
+      <descripcion>Ratón inalámbrico Logitech MX Master</descripcion>
+      <consumo>2W</consumo>
+      <garantia>2 años</garantia>
+      <precio_con_iva>75</precio_con_iva>
+    </contenido>
+  </componente>
+</listacomponentes>

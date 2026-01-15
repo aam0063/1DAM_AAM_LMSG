@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE biblioteca SYSTEM "biblio.dtd">
+<biblioteca[
+
+<!ELEMENT biblioteca (libro+)>
+<!ELEMENT libro (nombre, autor+, editorial?, paginas, (precio|precio_con_iva))>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT paginas (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT precio_con_iva (#PCDATA)>
+
+]>
+
+
+    <libro>
+        <nombre>Introducción a xml</nombre>
+        <autor>Pedro Martínez</autor>
+        <autor>Alberto Ruiz</autor>
+        <editorial>Paraninfo</editorial>
+        <paginas>345</paginas>
+        <precio>45</precio>
+    </libro>
+
+    <libro>
+        <nombre>CSS3</nombre>
+        <autor>Luis Ruiz</autor>
+        <editorial>Sintesis</editorial>
+        <paginas>234</paginas>
+        <precio_con_iva>45</precio_con_iva>
+    </libro>
+
+    <libro>
+        <nombre>El señor de los anillos</nombre>
+        <autor>Tolkien</autor>
+        <paginas>234</paginas>
+        <precio>34</precio>
+    </libro>
+
+</biblioteca>

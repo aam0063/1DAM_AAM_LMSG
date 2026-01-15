@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<libro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="biblioteca.xsd">
+    <titulo>Introduccion a XML</titulo>
+    <autor> Michael Jorden</autor>
+    <autor> Lebron Jomes</autor>
+    <editorial> Baller</editorial>
+    <precio>21</precio>
+</libro>
