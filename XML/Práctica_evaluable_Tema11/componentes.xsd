@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Alejandro Arévalo Merlo-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+    <xs:element name = "listacomponentes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="componente" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="marca" xs:type="xs:string"></xs:element>
+                            <xs:element name="modelo" xs:type="xs:string"></xs:element>
+                            <!-- Se pone choice por que puede ser de diferentes tipos-->
+                            <xs:choice>
+                                <xs:element name="CPU" xs:type="xs:string"></xs:element>
+                                <xs:element name="GPU" xs:type="xs:string"></xs:element>
+                                <xs:element name="RAM" xs:type="xs:string"></xs:element>
+                            </xs:choice>
+
+                            <!-- min y max-->
+                            <xs:element name="precio" minOccurs="1" maxOccurs="300" xs:type="xs:decimal"></xs:element>
+                            <xs:element name="stock" xs:type="integer"></xs:element>
+                            <xs:element name="cantidad" xs:type="integer"></xs:element>
+
+                            <!-- atributo obligatorio-->
+                            <xs:atribute name="fecha_alta" xs:type="xs:date" use="required"></xs:atribute>
+
+                            <xs:atribute name="garantia" xs:type="integer" use="optional"></xs:atribute>
+
+                            <xs:element name="color" xs:type="xs:string"></xs:element>
+                            <xs:element name="clientereserva" xs:type="tipoclientereserva"></xs:element>
+                            
+                            
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+        <!--cliente reserva-->
+    <xs:simpleType name="tipoclientereserva">
+        <xs:restriction base="tipoclientereserva">
+            <xs:totalDigits value="8"></xs:totalDigits>
+            <xs:pattern value="\d{8}[A-Z]"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    
+
+
+
+</xs:schema>
